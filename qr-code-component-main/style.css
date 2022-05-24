@@ -33,10 +33,11 @@ img {
   border-radius: 1rem;
 }
 
-h2 {
+h1 {
   text-align: center;
   color: #1f3251;
   margin-bottom: 2rem;
+  font-size: 2.2rem;
 }
 
 P {
