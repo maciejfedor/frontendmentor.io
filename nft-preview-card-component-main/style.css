@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: #0d192b;
+  color: #8bacda;
+  font-weight: 400;
+}
+
+.nft-box {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+.nft {
+  max-width: 29rem;
+  background-color: #14253d;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.nft-img-box {
+  position: relative;
+}
+.nft-img {
+  background-image: url("images/image-equilibrium.jpg");
+  width: 25rem;
+  height: 25rem;
+  margin-bottom: 1.6rem;
+  border-radius: 0.6rem;
+  background-size: cover;
+}
+
+.nft-img-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.nft-heading {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 1.2rem;
+}
+
+.nft-description {
+  font-size: 1.5rem;
+  margin-bottom: 1.6rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.nft-features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.8rem;
+}
+
+.nft-feature {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nft-feature-text {
+  font-size: 1.35rem;
+}
+
+.nft-feature-text strong {
+  color: #00fff7;
+  font-weight: 600;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-top: 1px solid #2f415b;
+  padding: 1rem 0;
+}
+
+.nft-author-img {
+  width: 2.8rem;
+  height: 2.8rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.nft-author {
+  font-size: 1.3rem;
+}
+
+.nft-author span {
+  color: #fff;
+}
+
+.nft-heading:hover,
+.nft-author span:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+.nft-img-box:hover .nft-img {
+  background-image: linear-gradient(
+      rgb(0, 255, 247, 0.4),
+      rgba(0, 255, 247, 0.4)
+    ),
+    url("images/image-equilibrium.jpg");
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
