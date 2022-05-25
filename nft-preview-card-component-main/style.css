@@ -30,20 +30,36 @@ body {
 .nft-img-box {
   position: relative;
 }
+
 .nft-img {
-  background-image: url("images/image-equilibrium.jpg");
-  width: 25rem;
-  height: 25rem;
-  margin-bottom: 1.6rem;
+  width: 100%;
+  height: auto;
   border-radius: 0.6rem;
-  background-size: cover;
+  opacity: 1;
+  display: block;
+  margin-bottom: 1.6rem;
+}
+
+.nft-img-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 255, 247, 0.5);
+  opacity: 0;
 }
 
 .nft-img-icon {
   position: absolute;
+  transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+}
+
+.nft-img-box:hover .nft-img-overlay {
+  opacity: 1;
   cursor: pointer;
 }
 
@@ -105,18 +121,15 @@ footer {
   color: #fff;
 }
 
+.nft-heading,
+.nft-author span,
+.nft-img-overlay {
+  transition: all 0.3s;
+}
+
 .nft-heading:hover,
 .nft-author span:hover {
   color: #00fff7;
-  cursor: pointer;
-}
-
-.nft-img-box:hover .nft-img {
-  background-image: linear-gradient(
-      rgb(0, 255, 247, 0.4),
-      rgba(0, 255, 247, 0.4)
-    ),
-    url("images/image-equilibrium.jpg");
   cursor: pointer;
 }
 
