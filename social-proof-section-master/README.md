@@ -20,7 +20,6 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 Users should be able to:
 
 - View the optimal layout depending on their device's screen size
-- See hover states for interactive elements
 
 ### Screenshot
 
@@ -28,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution](https://github.com/maciejfedor/frontendmentor.io/tree/master/3-column-preview-card-component-main)
-- [Live site](https://3-column-preview-card-component-maciej.netlify.app/)
+- [Solution](https://github.com/maciejfedor/frontendmentor.io/tree/master/social-proof-section-master)
+- [Live site](https://social-proof-section-maciej.netlify.app/)
 
 ## My process
 
