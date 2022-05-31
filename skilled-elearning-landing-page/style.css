@@ -47,6 +47,23 @@ body {
   border-radius: 2.8rem;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   transition: all 0.3s;
+
+  cursor: pointer;
+}
+
+.btn--light {
+  background: linear-gradient(#ff6f48, #f02aa6);
+  padding: 2rem 3.9rem;
+}
+
+.btn--semi {
+  background: linear-gradient(#4851ff, #f02aa6);
+  padding: 2rem 3.9rem;
+}
+
+.btn--dark {
+  background-color: #13183f;
+  padding: 1.6rem 2.4rem;
 }
 
 .btn-overlay {
@@ -70,26 +87,10 @@ body {
 .btn--dark:hover,
 .btn--dark:active {
   background-color: #666ca3;
-  cursor: pointer;
 }
 
 .btn-container {
   position: relative;
-}
-
-.btn--light {
-  background: linear-gradient(#ff6f48, #f02aa6);
-  padding: 2rem 3.9rem;
-}
-
-.btn--semi {
-  background: linear-gradient(#4851ff, #f02aa6);
-  padding: 2rem 3.9rem;
-}
-
-.btn--dark {
-  background-color: #13183f;
-  padding: 1.6rem 2.4rem;
 }
 
 .heading-primary {
@@ -109,6 +110,9 @@ body {
   margin-bottom: 2.4rem;
 }
 
+.feature-description {
+  margin-bottom: 5.6rem;
+}
 .hero-text-box {
   margin-bottom: 6.4rem;
 }
@@ -127,8 +131,10 @@ body {
 }
 
 .feature-item {
-  padding: 0 2.8rem 2rem 2.8rem;
+  padding: 0 2.8rem 3.2rem 2.8rem;
+  border-radius: 10px;
   background-color: #fff;
+  position: relative;
 }
 .feature-icon {
   transform: translateY(-43%);
@@ -147,15 +153,24 @@ body {
 .heading-tertiary {
   font-size: 2rem;
   font-weight: 800;
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.6rem;
 }
 
 .feature-link:link,
 .feature-link:visited {
+  display: block;
   font-size: 1.8rem;
   font-weight: 700;
   color: #f74780;
   text-decoration: none;
+  transition: all 0.3s;
+  position: absolute;
+  bottom: 3.2rem;
+}
+
+.feature-link:hover,
+.feature-link:active {
+  color: rgba(247, 71, 127, 0.501);
 }
 
 .section-feature {
