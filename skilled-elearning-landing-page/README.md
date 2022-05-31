@@ -24,11 +24,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot/desktop.png)
+![](./screenshot_desktop.png)
 
-![](./screenshot/tablet.png)
+![](./screenshot_tablet.png)
 
-![](./screenshot/mobile.png)
+![](./screenshot_mobile.png)
 
 ### Links
 
