@@ -26,10 +26,6 @@ Users should be able to:
 
 ![](./screenshot_desktop.png)
 
-![](./screenshot_tablet.png)
-
-![](./screenshot_mobile.png)
-
 ### Links
 
 - [Solution](https://github.com/maciejfedor/frontendmentor.io/tree/master/skilled-elearning-landing-page)
