@@ -24,16 +24,16 @@ Users should be able to:
 
 ### Screenshot
 
-![](screenshot/desktop.png)
+![](./screenshot/desktop.png)
 
-![](screenshot/tablet.png)
+![](./screenshot/tablet.png)
 
-![](screenshot/mobile.png)
+![](./screenshot/mobile.png)
 
 ### Links
 
-- Solution [https://github.com/maciejfedor/frontendmentor.io/tree/master/skilled-elearning-landing-page]
-- Live Site [https://skilled-elearning-landing-page-maciej.netlify.app/]
+- [Solution](https://github.com/maciejfedor/frontendmentor.io/tree/master/skilled-elearning-landing-page)
+- [Live Site](https://skilled-elearning-landing-page-maciej.netlify.app/)
 
 ## My process
 
