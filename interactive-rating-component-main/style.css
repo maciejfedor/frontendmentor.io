@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  font-size: 1.5rem;
+
+  font-weight: 400;
+  background-color: #121417;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.card {
+  background: radial-gradient(#232a34, #181e27);
+  border-radius: 3rem;
+  max-width: 41.2rem;
+
+  margin: 0 2.4rem;
+}
+.card--0 {
+  padding: 3.2rem;
+}
+.card--1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding: 4.5rem 4rem 4.5rem 3.2rem; */
+  padding: 3.2rem 4rem 3.2rem 3.2rem;
+  position: absolute;
+}
+
+.star {
+  background-color: #252d37;
+  padding: 1.6rem;
+  border-radius: 50%;
+  margin-bottom: 3.35rem;
+}
+.heading--0 {
+  margin-bottom: 1.835rem;
+}
+.heading--1 {
+  margin-bottom: 1.5rem;
+}
+.heading {
+  font-size: 2.8rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.description {
+  color: #959eac;
+  line-height: 1.6;
+}
+
+.description--0 {
+  margin-bottom: 2.4rem;
+}
+.buttons {
+  display: flex;
+  gap: 2.1rem;
+  margin-bottom: 3.2rem;
+}
+
+.btn {
+  display: block;
+  font-size: 1.4rem;
+  color: #7c8798;
+  border: none;
+  background-color: #252d37;
+  width: 5.1rem;
+  height: 5.1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+.btn--active,
+.btn:hover,
+.btn:active {
+  background-color: #fc7614;
+  color: #fff;
+}
+
+.btn--lower {
+  background-color: #7c8798;
+  color: #fff;
+}
+
+.btn-submit {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  border: none;
+  background-color: #fb7413;
+  color: #fff;
+  padding: 1.1rem 13.7rem;
+  border-radius: 2.25rem;
+  /* margin: auto; */
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.btn-submit:hover,
+.btn-submit:active {
+  background-color: #fff;
+  color: #fc7614;
+}
+
+.thank-img {
+  margin-bottom: 3.2rem;
+}
+
+.label-rate {
+  color: #fc7614;
+  background-color: #262e38;
+  padding: 0.85rem 2rem;
+  border-radius: 2.25rem;
+  margin-bottom: 3.9rem;
+}
+
+.description--1 {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
