@@ -1,0 +1,57 @@
+/* DESKTOP 1040px */
+
+@media (min-width: 65em) {
+  .accordion {
+    display: grid;
+    grid-template-columns: 1fr 0.95fr;
+    /* align-items: center;
+    justify-content: center; */
+    /* padding: 6.5rem 9.5rem 8rem 0; */
+    position: relative;
+    width: 92rem;
+    padding: 0;
+  }
+
+  .heading {
+    text-align: left;
+  }
+  .text {
+    font-size: 1.4rem;
+  }
+  .text-box {
+    padding: 7rem 9.5rem 0 0;
+  }
+  .faq-img {
+    width: 47.2rem;
+
+    transform: translate(-8.4rem, 18%);
+  }
+
+  .box-img {
+    display: block;
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    transform: translate(-49%, 105%);
+  }
+
+  .accordion .image-box {
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 125% 60%;
+    background-size: 170%;
+
+    overflow-x: hidden;
+    height: 100%;
+    padding-bottom: 16rem;
+  }
+
+  .item {
+    width: 35rem;
+  }
+
+  /* .open .hidden-box {
+    display: block;
+  } */
+}

@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 1.5;
+  line-height: 1;
+  font-weight: 400;
+  color: #4b4c5f;
+  background: linear-gradient(#b068e9, #6463e7);
+}
+
+.container {
+  display: grid;
+  place-content: center;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.accordion {
+  background-color: #fff;
+  border-radius: 2.3rem;
+  padding: 0 2.4rem 4.8rem 2.4rem;
+  margin-top: 14.8rem;
+  margin-bottom: 8.5rem;
+  width: 32.7rem;
+}
+
+.box-img {
+  display: none;
+}
+
+.faq-img {
+  display: block;
+  width: 79%;
+  margin: 0 auto;
+  transform: translateY(-60%);
+}
+
+.image-box {
+  background-image: url(images/bg-pattern-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  height: 12rem;
+}
+
+.heading {
+  color: #1e1f36;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3.2rem;
+  text-align: center;
+  margin-bottom: 2.8rem;
+}
+
+.item {
+  border-bottom: 1px solid #e8e8ea;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 2rem;
+  row-gap: 1.1rem;
+  place-content: center;
+  align-items: center;
+  padding: 2rem 0 1.2rem 0;
+  transition: all 0.5s ease;
+  /* width: 27.9rem; */
+}
+
+.hidden-box {
+  overflow: hidden;
+  max-height: 0;
+  grid-column: 1;
+  transition: max-height 0.5s ease;
+}
+
+.hidden-box p {
+  font-size: 1.2rem;
+  color: #787887;
+  line-height: 1.5;
+}
+
+.open .text {
+  font-weight: 700;
+}
+.open .arrow {
+  transform: rotate(180deg);
+}
+
+.text {
+  font-size: 1.3rem;
+}
+.item:hover,
+.item:active {
+  color: #f47b56;
+  cursor: pointer;
+}
+
+.arrow {
+  width: 1rem;
+  height: 0.6rem;
+  stroke-width: 2px;
+}
+
+/* .open .hidden-box {
+  display: block;
+} */
