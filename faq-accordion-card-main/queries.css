@@ -4,12 +4,10 @@
   .accordion {
     display: grid;
     grid-template-columns: 1fr 0.95fr;
-    /* align-items: center;
-    justify-content: center; */
-    /* padding: 6.5rem 9.5rem 8rem 0; */
     position: relative;
     width: 92rem;
     padding: 0;
+    margin: 13rem;
   }
 
   .heading {

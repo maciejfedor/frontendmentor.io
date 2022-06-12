@@ -30,6 +30,7 @@ body {
   margin-top: 14.8rem;
   margin-bottom: 8.5rem;
   width: 32.7rem;
+  filter: drop-shadow(0 10px 4px rgba(0, 0, 0, 0.25));
 }
 
 .box-img {
