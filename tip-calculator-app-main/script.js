@@ -15,12 +15,14 @@ const removeLatestActive = function () {
     btnActive.classList.remove('btn--active');
   });
 };
+
 const init = function () {
   amountTip.textContent = '$0.00';
   amountTotal.textContent = '$0.00';
   removeLatestActive();
   inputBill.value = '';
   inputPeople.value = '';
+  inputCustom.value = '';
 };
 
 init();
@@ -29,34 +31,38 @@ const calcTip = function () {
   const bill = Number(inputBill.value);
   const people = Number(inputPeople.value);
   const tipPercent = currentBtn ? Number(currentBtn.value) : 0;
-  console.log(bill, people, tipPercent);
 
-  inputPeople.value === '0'
-    ? labelError.classList.add('hidden')
-    : labelError.classList.remove('hidden');
+  if (inputPeople.value === '0') {
+    labelError.classList.add('hidden');
+    inputPeople.classList.add('input-people--error');
+  } else {
+    labelError.classList.remove('hidden');
+    inputPeople.classList.remove('input-people--error');
+  }
 
   if (bill && people !== 0) {
-    const tip = Math.round(((bill * tipPercent) / people) * 100) / 100;
+    const tip = (bill * tipPercent) / 100 / people;
+    const total = (tip + bill) / people;
 
-    const total = Math.round(((tip + bill) / people) * 100) / 100;
-
-    amountTip.textContent = `$${tip}`;
-    amountTotal.textContent = `$${total}`;
+    amountTip.textContent = `$${tip.toFixed(2)}`;
+    amountTotal.textContent = `$${total.toFixed(2)}`;
   }
 };
-
-btnReset.addEventListener('click', init);
 
 let currentBtn;
 
 btn.forEach(function (button, i) {
-  button.addEventListener('click', function (e) {
+  button.addEventListener('click', function () {
     removeLatestActive();
-    if (!button.classList.contains('btn--custom'))
-      button.classList.toggle('btn--active');
 
+    if (!button.classList.contains('btn--custom')) {
+      button.classList.toggle('btn--active');
+    }
     currentBtn = button;
+    calcTip();
   });
 });
 
-document.body.addEventListener('click', calcTip);
+inputBill.addEventListener('input', calcTip);
+inputPeople.addEventListener('input', calcTip);
+btnReset.addEventListener('click', init);

@@ -181,6 +181,6 @@ button:active,
   display: block;
 }
 
-.input-people--error {
-  /* outline: 3px solid #e17052; */
+.input-people--error:focus {
+  outline: 3px solid #e17052;
 }
