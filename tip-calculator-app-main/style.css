@@ -96,6 +96,7 @@ input:focus {
   text-align: center;
   color: #00474b;
   background-color: #f3f9fa;
+  text-align: right;
 }
 
 button:hover,
