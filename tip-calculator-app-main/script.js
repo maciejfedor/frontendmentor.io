@@ -54,7 +54,6 @@ let currentBtn;
 btn.forEach(function (button, i) {
   button.addEventListener('click', function () {
     removeLatestActive();
-
     if (!button.classList.contains('btn--custom')) {
       button.classList.toggle('btn--active');
     }
