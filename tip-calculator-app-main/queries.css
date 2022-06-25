@@ -46,4 +46,9 @@
   .btn {
     width: 11.7rem;
   }
+
+  .btn--custom {
+    text-align: left;
+    font-size: 2.2rem;
+  }
 }

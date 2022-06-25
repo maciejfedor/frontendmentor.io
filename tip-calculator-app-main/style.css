@@ -61,6 +61,16 @@ input:focus {
   outline: 3px solid #26c2ae;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
 .input-bill {
   background-image: url(images/icon-dollar.svg);
   background-repeat: no-repeat;
@@ -93,10 +103,9 @@ input:focus {
 }
 
 .btn--custom {
-  text-align: center;
   color: #00474b;
   background-color: #f3f9fa;
-  text-align: right;
+  text-align: center;
 }
 
 button:hover,
